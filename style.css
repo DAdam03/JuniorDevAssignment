@@ -6,11 +6,56 @@
 
 
 
+.flex-container{
+    display: flex;
+}
+
+
+
+.main-page{
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
 header{
     width: 100%;
     height: 150px;
+
     position: fixed;
+    
     z-index: 1;
+
+    justify-content: space-between;
+
+    color:white;
+}
+
+header div{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#navbar{
+    user-select: none;
+}
+
+#navbar button{
+    cursor: pointer;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#navbar #search-button{
+    border-left: white solid 2px;
 }
 
 
