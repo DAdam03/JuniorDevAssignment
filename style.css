@@ -9,6 +9,11 @@ html{
     margin: 0;
 }
 
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
 
 
 .flex-container{
@@ -38,7 +43,15 @@ html{
 
 .main-page{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
+
+    color:rgba(255,255,255,1);
+
+    transition: color 0.5s;
+}
+
+.main-page:hover{
+    color: rgba(255,255,255,0.6);
 }
 
 
@@ -76,6 +89,12 @@ header div{
 
 #navbar #search-button{
     border-left: white solid 2px;
+    border-bottom: none;
+    transition: none;
+}
+
+#navbar #search-button:hover{
+    border-bottom: none;
 }
 
 
@@ -125,6 +144,25 @@ header div{
     padding-bottom: 20px;
 }
 
+.title-info .article-tag-a{
+    color: rgba(255,255,255,1);
+    transition: color 0.5s;
+}
+
+.title-info .article-tag-a:hover{
+    color: rgba(255,255,255,0.7);
+}
+
+.title-info .article-author-a{
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition: border-bottom-color 0.5s;
+}
+
+.title-info .article-author-a:hover{
+    border-bottom-color: rgba(255,255,255,1);
+}
+
+
 h1{
     margin-left: 30%;
     margin-right: 30%;
@@ -147,11 +185,18 @@ article{
     margin-right: 15%;
 
     font-size: 12px;
-    color: #6C757D;
+    color: #6c757d;
 }
 
 #article-info .article-author-a{
     font-weight: 700;
+
+    border-bottom: 2px solid rgba(108, 117, 125, 0);
+    transition: border-bottom-color 0.5s;
+}
+
+#article-info .article-author-a:hover{
+    border-bottom-color: rgba(108, 117, 125,1);
 }
 
 
@@ -212,7 +257,23 @@ section p{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
+
+    transition: background-color 0.5s;
 }
+
+.article-tag-button:hover{
+    background-color:#eeeeee;
+}
+
+#article-share{
+    color: rgb(108, 117, 125, 1);
+    transition: color 0.5s;
+}
+
+#article-share:hover{
+    color: rgb(108, 117, 125, 0.7);
+}
+
 
 
 #latest-articles{
@@ -236,6 +297,13 @@ h3{
     object-fit: cover;
     display: block;
     float:left;
+
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.article-box:hover img{
+    opacity: 0.85;
 }
 
 .article-box figcaption{
@@ -257,9 +325,26 @@ h3{
     margin-right: 15px;
 }
 
+.article-box-tags .article-tag-a{
+    color: rgba(73, 80, 87,1);
+    transition: color 0.5s;
+}
+
+.article-box-tags .article-tag-a:hover{
+    color: rgba(73, 80, 87,0.7);
+}
+
+
 h4{
     font-weight: 400;
     font-size: 16px;
+
+    text-shadow: 0 0 0px #495057;
+    transition: text-shadow 0.5s;
+}
+
+h4:hover{
+    text-shadow: 0 0 2px #757575;
 }
 
 
@@ -270,7 +355,7 @@ footer{
 
     background-color: #212529;
 
-    color: #F8F9FA80;
+    color: rgba(248, 249, 250, 0.5);
     font-size: 12px;
     font-weight: 400;
 }
@@ -288,15 +373,27 @@ footer hr{
 
 .footer-page{
     display: inline-block;
+    transition: color 0.5s;
+}
+
+.footer-page:hover{
+    color: rgba(248, 249, 250, 0.25);
 }
 
 .footer-contact{
     display: inline-block;
     margin-left: 20px;
+    transition: color 0.5s;
+}
+
+.footer-contact:hover{
+    color: rgba(248, 249, 250, 0.25);
 }
 
 
 footer div .main-page{
     color:white;
 }
+
+
 
