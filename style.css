@@ -20,6 +20,9 @@
     user-select: none;
 }
 
+button{
+    cursor: pointer;
+}
 
 
 header{
@@ -47,8 +50,6 @@ header div{
 }
 
 #navbar button{
-    cursor: pointer;
-
     border: none;
     background-color: rgba(0, 0, 0, 0);
     color: white;
@@ -149,6 +150,7 @@ section p{
 
     text-align: justify;
 
+    font-size: 12px;
     color: #6C757D;
 }
 
@@ -162,7 +164,7 @@ section p{
     justify-content: space-between;
 
     color: #6C757D;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
 }
@@ -178,10 +180,69 @@ section p{
     padding: 5px 15px;
 
     color: #6C757D;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
 }
+
+
+#latest-articles{
+    padding: 80px 5%;
+
+    background-color: #5E5E5E0D;
+}
+
+h3{
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 25px;
+    color: #495057;
+}
+
+#latest-articles-container{
+    justify-content: space-between;
+}
+
+.article-box img{
+    width: calc(90vw / 6 - 40px);
+    height: calc(90vw / 6 - 40px);
+
+    object-fit: cover;
+    display: block;
+    float:left;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.article-box figcaption{
+    display: inline-block;
+    max-width: calc(90vw / 6 - 15px);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.article-box-tags{
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+}
+
+.article-tag-a{
+    margin-right: 15px;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 16px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
 
 footer{
     margin-top: 10px;
