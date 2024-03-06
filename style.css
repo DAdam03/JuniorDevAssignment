@@ -34,6 +34,8 @@ html{
 }
 
 
+
+
 .main-page{
     font-size: 18px;
     font-weight: 700;
@@ -79,7 +81,19 @@ header div{
     object-fit: cover;
 
     filter: brightness(70%);
+
+    animation-name: title-image-scroll;
+    animation-duration: 1ms;
+
+    animation-direction: alternate;
+    animation-timeline: scroll(root);
 }
+
+@keyframes title-image-scroll{
+    from{object-position: 50% 50%;}
+    to{object-position: 50% -60%;}
+}
+
 
 #title-figure{
     position: relative;
