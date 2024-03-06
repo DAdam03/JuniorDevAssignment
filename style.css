@@ -8,20 +8,18 @@
 
 .flex-container{
     display: flex;
+    justify-content: space-between;
 }
 
+.clickable{
+    cursor: pointer;
+    user-select: none;
+}
 
 
 .main-page{
     font-size: 18px;
     font-weight: 700;
-
-    cursor: pointer;
-    user-select: none;
-}
-
-button{
-    cursor: pointer;
 }
 
 
@@ -32,8 +30,6 @@ header{
     position: fixed;
     
     z-index: 1;
-
-    justify-content: space-between;
 
     color:white;
 }
@@ -100,14 +96,6 @@ h1{
 }
 
 
-
-a{
-    cursor: pointer;
-    user-select: none;
-}
-
-
-
 article{
     margin-left: 5%;
     margin-right: 5%;
@@ -161,8 +149,6 @@ section p{
     margin-left: 15%;
     margin-right: 15%;
 
-    justify-content: space-between;
-
     color: #6C757D;
     text-transform: uppercase;
     font-weight: 700;
@@ -200,10 +186,6 @@ h3{
     color: #495057;
 }
 
-#latest-articles-container{
-    justify-content: space-between;
-}
-
 .article-box img{
     width: calc(90vw / 6 - 40px);
     height: calc(90vw / 6 - 40px);
@@ -211,9 +193,6 @@ h3{
     object-fit: cover;
     display: block;
     float:left;
-
-    cursor: pointer;
-    user-select: none;
 }
 
 .article-box figcaption{
@@ -238,14 +217,43 @@ h3{
 h4{
     font-weight: 400;
     font-size: 16px;
-
-    cursor: pointer;
-    user-select: none;
 }
 
 
 footer{
-    margin-top: 10px;
-    width: 100%;
+    width: 90%;
+    padding: 100px 5% 100px 5%;
+
+
+    background-color: #212529;
+
+    color: #F8F9FA80;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+footer hr{
+    border: 1px solid #E5E5E533;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#footer-pages{
+    width: 30%;
+}
+
+.footer-page{
+    display: inline-block;
+}
+
+.footer-contact{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+footer div .main-page{
+    color:white;
 }
 
