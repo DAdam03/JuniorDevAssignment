@@ -14,16 +14,17 @@
         <link rel="stylesheet" href="style.css">
         
         <script src="animations.js"></script>
+        <script src="dropdown_menu.js"></script>
         
     </head>
-    <body onload="loaded()">
+    <body onload="loaded()" onclick="bodyClicked()">
         <header class="flex-container">
             <div class="main-page"><a class="clickable">VENCE.</a></div>
             <div id="navbar">
-                <button class="nav-button clickable">Home</button>
-                <button class="nav-button clickable">Inspiration</button>
-                <button class="nav-button clickable">Courses</button>
-                <button class="nav-button clickable">Blog</button>
+                <button class="nav-button clickable" name="Home">Home</button>
+                <button class="nav-button clickable" name="Inspiration">Inspiration &#11206;</button>
+                <button class="nav-button clickable" name="Courses">Courses &#11206;</button>
+                <button class="nav-button clickable" name="Blog">Blog</button>
                 <button class="nav-button clickable" id="search-button">&#x1F50E;&#xFE0E;</button>
             </div>
         </header>
