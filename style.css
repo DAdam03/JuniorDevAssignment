@@ -235,6 +235,8 @@ section p{
 }
 
 
+
+
 .left-image-anim{
     animation: left-image-keyframes 1.5s;
     animation-iteration-count: 1;
@@ -277,6 +279,7 @@ section p{
     border-radius: 3px;
 
     margin-right: 10px;
+    margin-bottom: 5px;
 
     padding: 5px 15px;
 
@@ -381,8 +384,8 @@ h3{
     color: #495057;
 }
 
-.article-tag-a{
-    margin-right: 15px;
+.article-tag-a ~ .article-tag-a{
+    margin-left: 15px;
 }
 
 .article-box-tags .article-tag-a{
@@ -442,8 +445,11 @@ footer hr{
 
 .footer-contact{
     display: inline-block;
-    margin-left: 20px;
     transition: color 0.5s;
+}
+
+.footer-contact ~ .footer-contact{
+    margin-left: 20px;
 }
 
 .footer-contact:hover{
@@ -454,6 +460,134 @@ footer hr{
 footer div .main-page{
     color:white;
 }
+
+
+/*reszponziv formazas*/
+@media (max-width: 800px) {
+
+    header{
+        height: 80px;
+    }
+
+    .main-page{
+        font-size: 14px;
+    }
+
+    header div{
+        padding: 15px 15px;
+    }
+
+    #navbar{
+        font-size: 12px;
+    }
+
+    .nav-button{
+        padding-inline: 3px;
+    }
+
+
+    #title-image{
+        height: 350px;
+    }
+
+    h1{
+        margin-left: 15%;
+        margin-right: 15%;
+        
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    #article-info{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    section{
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        margin-bottom: 15px;
+        margin-right: 17%;
+        font-size: 18px;
+    }
+
+    .article-image{
+        height: 200px;
+    }
+
+    #article-img-container{
+        flex-direction: column;
+    }
+
+    .flex-container .article-image{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .article-tag-button{
+        margin-bottom: 5px;
+    
+        padding: 2px 5px;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    
+    #article-end{
+        margin: 50px 8%;
+    }
+
+
+    #latest-articles{
+        padding: 35px 5%;
+    }
+
+    #latest-articles-container{
+        flex-direction: column;
+    }
+
+    .article-box{
+        margin-bottom: 20px;
+    }
+
+    .article-box img{
+        width: calc(90vw / 2 - 40px);
+        height: calc(90vw / 2 - 40px);
+    }
+
+    .article-box figcaption{
+        max-width: calc(90vw / 2 - 15px);
+    }
+
+    footer{
+        padding: 40px 5%;
+    }
+
+    footer hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #footer-pages{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #address{
+        margin-left: 10px;
+    }
+
+    #copyright{
+        margin-right: 10px;
+        text-align: right;
+    }
+}
+
 
 
 
