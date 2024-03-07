@@ -1,143 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Oldal</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Oldal</title>
 
-    <!--import Poppins font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header class="flex-container">
-        <div class="main-page"><a class="clickable">VENCE.</a></div>
-        <div id="navbar">
-            <button class="nav-button clickable">Home</button>
-            <button class="nav-button clickable">Inspiration</button>
-            <button class="nav-button clickable">Courses</button>
-            <button class="nav-button clickable">Blog</button>
-            <button class="nav-button clickable" id="search-button">&#x1F50E;&#xFE0E;</button>
-        </div>
-    </header>
+        <!--import Poppins font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <main>
-        <figure id="title-figure">
-            <img id="title-image" alt="title_image" src="img/c1a798f3438824176cebce7d2f4b61d7.jpg">
-            <figcaption>
-                <p class="title-info">
-                    <a class="article-tag-a clickable">Creative,</a>
-                    <a class="article-tag-a clickable">Inspiration</a>
-                </p>
-                <h1>I Like to Keep Things Simple to Appreciate the Details</h1>
-                <p class="title-info">
-                    <a class="article-author-a clickable">By: Peter Roward</a>
-                </p>
-            </figcaption>
-        </figure>
-
-        <article>
-            <div id="article-info">
-                <span class="article-date">29.Jun.2021</span> - <span class="article-date">8 min</span> - <a class="article-author-a clickable">By: Peter Roward</a>
-            </div>
-            <section>
-                <h2>The purpose of our lives is to be happy.</h2>
-
-                <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment. Uniquely foster revolutionary value whereas accurate communities.</p>
-
-                <p>Conveniently engineer robust experiences after performance based initiatives. Credibly communicate strategic technology whereas turnkey functionalities. Professionally re-engineer magnetic markets for highly efficient functionalities. Efficiently fabricate user friendly opportunities for backward-compatible experiences. Competently scale team building relationships through real-time solutions.</p>
-
-                <p>Interactively productivate cross-platform vortals through tactical results. Interactively underwhelm efficient alignments with enabled materials. Rapidiously leverage existing superior technology via fully researched e-commerce. Efficiently whiteboard principle-centered portals vis-a-vis magnetic solutions. Conveniently network ethical e-markets with emerging web services.</p>
-            </section>
+        <link rel="stylesheet" href="style.css">
         
-            <img alt="img_1" src="img/f3c35478396c7b65beab63e1bcb1bfcf.jpg" class="article-image">
+        <script src="animations.js"></script>
+        
+    </head>
+    <body onload="loaded()">
+        <header class="flex-container">
+            <div class="main-page"><a class="clickable">VENCE.</a></div>
+            <div id="navbar">
+                <button class="nav-button clickable">Home</button>
+                <button class="nav-button clickable">Inspiration</button>
+                <button class="nav-button clickable">Courses</button>
+                <button class="nav-button clickable">Blog</button>
+                <button class="nav-button clickable" id="search-button">&#x1F50E;&#xFE0E;</button>
+            </div>
+        </header>
 
-            <section>
-                <h2>Many of life&apos;s failures are people who did not realize how close they were to success when they gave up.</h2>
-                
-                <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment. Uniquely foster revolutionary value whereas accurate communities.</p>
+        <main>
+            <figure id="title-figure">
+                <img id="title-image" alt="title_image" src="img/c1a798f3438824176cebce7d2f4b61d7.jpg">
+                <figcaption>
+                    <p class="title-info">
+                        <a class="article-tag-a clickable">Creative,</a>
+                        <a class="article-tag-a clickable">Inspiration</a>
+                    </p>
+                    <h1>I Like to Keep Things Simple to Appreciate the Details</h1>
+                    <p class="title-info">
+                        <a class="article-author-a clickable">By: Peter Roward</a>
+                    </p>
+                </figcaption>
+            </figure>
 
-                <p>Conveniently engineer robust experiences after performance based initiatives. Credibly communicate strategic technology whereas turnkey functionalities. Professionally re-engineer magnetic markets for highly efficient functionalities. Efficiently fabricate user friendly opportunities for backward-compatible experiences. Competently scale team building relationships through real-time solutions.</p>
-            </section>
+            <article>
+                <div id="article-info">
+                    <span class="article-date">29.Jun.2021</span> - <span class="article-date">8 min</span> - <a class="article-author-a clickable">By: Peter Roward</a>
+                </div>
+                <section>
+                    <h2>The purpose of our lives is to be happy.</h2>
+
+                    <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment. Uniquely foster revolutionary value whereas accurate communities.</p>
+
+                    <p>Conveniently engineer robust experiences after performance based initiatives. Credibly communicate strategic technology whereas turnkey functionalities. Professionally re-engineer magnetic markets for highly efficient functionalities. Efficiently fabricate user friendly opportunities for backward-compatible experiences. Competently scale team building relationships through real-time solutions.</p>
+
+                    <p>Interactively productivate cross-platform vortals through tactical results. Interactively underwhelm efficient alignments with enabled materials. Rapidiously leverage existing superior technology via fully researched e-commerce. Efficiently whiteboard principle-centered portals vis-a-vis magnetic solutions. Conveniently network ethical e-markets with emerging web services.</p>
+                </section>
+            
+                <img alt="img_1" src="img/f3c35478396c7b65beab63e1bcb1bfcf.jpg" class="article-image">
+
+                <section>
+                    <h2>Many of life&apos;s failures are people who did not realize how close they were to success when they gave up.</h2>
+                    
+                    <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment. Uniquely foster revolutionary value whereas accurate communities.</p>
+
+                    <p>Conveniently engineer robust experiences after performance based initiatives. Credibly communicate strategic technology whereas turnkey functionalities. Professionally re-engineer magnetic markets for highly efficient functionalities. Efficiently fabricate user friendly opportunities for backward-compatible experiences. Competently scale team building relationships through real-time solutions.</p>
+                </section>
+
+                <div class="flex-container" id="article-img-container">
+                    <img alt="img_2" src="img/08a56d3728b7239bf9546aab4e76bfd5.jpg" class="article-image left-image">
+                    <img alt="img_3" src="img/903c5ff30d0e06ddaa60dd401d3765d1.jpg" class="article-image right-image">
+                </div>
+
+                <section>
+                    <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment.</p>
+                </section>
+                <div id="article-end" class="flex-container">
+                    <div id="article-tags">
+                        <button class="article-tag-button clickable">Creative</button>
+                        <button class="article-tag-button clickable">Inspiration</button>
+                        <button class="article-tag-button clickable">Travel</button>
+                        <button class="article-tag-button clickable">Photography</button>
+                    </div>
+                    <a id="article-share" class="clickable">Share</a>
+                </div>
+            </article>
+
+            <div id="latest-articles">
+                <h3>Latest Articles</h3>
+                <div class="flex-container" id="latest-articles-container">
+                    <figure class="article-box">
+                        <img alt="article_1" src="img/d566a0d5b0900b1aabdcb6f468504f7a.jpg" class="clickable">
+                        <figcaption>
+                            <div class="article-box-tags">
+                                <a class="article-tag-a clickable">Creative</a>
+                                <a class="article-tag-a clickable">Inspiration</a>
+                            </div>
+                            <h4 class="clickable">Defaulting to Mindfulness: The Third Person Effect</h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="article-box">
+                        <img alt="article_2" src="img/644c0c305f8f66640bc1c273d25a0f92.jpg" class="clickable">
+                        <figcaption>
+                            <div class="article-box-tags">
+                                <a class="article-tag-a clickable">Technology</a>
+                            </div>
+                            <h4 class="clickable">Michael Ray and Rochelle Myers called it Zebra</h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="article-box">
+                        <img alt="article_3" src="img/657a9c3c898b74ca61d57fdb55ae460c.jpg" class="clickable">
+                        <figcaption>
+                            <div class="article-box-tags">
+                                <a class="article-tag-a clickable">Travel</a>
+                            </div>
+                            <h4 class="clickable">Hilary Kouma is nominated for Best Actress</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+
+        <footer>
 
             <div class="flex-container">
-                <img alt="img_2" src="img/08a56d3728b7239bf9546aab4e76bfd5.jpg" class="article-image">
-                <img alt="img_3" src="img/903c5ff30d0e06ddaa60dd401d3765d1.jpg" class="article-image">
-            </div>
-
-            <section>
-                <p>Quickly monetize synergistic portals via efficient e-commerce. Phosfluorescently reinvent frictionless intellectual capital vis-a-vis an expanded array of niches. Efficiently provide access to interactive scenarios vis-a-vis bleeding-edge value. Energistically maximize premium meta-services and multifunctional collaboration and idea-sharing. Dramatically unleash front-end value after out-of-the-box opportunities. Energistically streamline magnetic action items after global markets. Collaboratively scale backward-compatible leadership skills and 24/7 best practices. Objectively exploit emerging methodologies vis-a-vis functionalized ideas. Energistically reconceptualize out-of-the-box innovation vis-a-vis cooperative methods of empowerment.</p>
-            </section>
-            <div id="article-end" class="flex-container">
-                <div id="article-tags">
-                    <button class="article-tag-button clickable">Creative</button>
-                    <button class="article-tag-button clickable">Inspiration</button>
-                    <button class="article-tag-button clickable">Travel</button>
-                    <button class="article-tag-button clickable">Photography</button>
+                <div class="main-page clickable">VENCE Studio.</div>
+                <div id="footer-pages" class="flex-container">
+                    <div class="footer-page clickable">About Studio</div>
+                    <div class="footer-page clickable">Archive</div>
+                    <div class="footer-page clickable">Contact Us</div>
                 </div>
-                <a id="article-share" class="clickable">Share</a>
+                <div id="footer-contacts">
+                    <div class="footer-contact clickable">Fb</div>
+                    <div class="footer-contact clickable">Tw</div>
+                    <div class="footer-contact clickable">Ln</div>
+                </div>
             </div>
-        </article>
-
-        <div id="latest-articles">
-            <h3>Latest Articles</h3>
-            <div class="flex-container" id="latest-articles-container">
-                <figure class="article-box">
-                    <img alt="article_1" src="img/d566a0d5b0900b1aabdcb6f468504f7a.jpg" class="clickable">
-                    <figcaption>
-                        <div class="article-box-tags">
-                            <a class="article-tag-a clickable">Creative</a>
-                            <a class="article-tag-a clickable">Inspiration</a>
-                        </div>
-                        <h4 class="clickable">Defaulting to Mindfulness: The Third Person Effect</h4>
-                    </figcaption>
-                </figure>
-                <figure class="article-box">
-                    <img alt="article_2" src="img/644c0c305f8f66640bc1c273d25a0f92.jpg" class="clickable">
-                    <figcaption>
-                        <div class="article-box-tags">
-                            <a class="article-tag-a clickable">Technology</a>
-                        </div>
-                        <h4 class="clickable">Michael Ray and Rochelle Myers called it Zebra</h4>
-                    </figcaption>
-                </figure>
-                <figure class="article-box">
-                    <img alt="article_3" src="img/657a9c3c898b74ca61d57fdb55ae460c.jpg" class="clickable">
-                    <figcaption>
-                        <div class="article-box-tags">
-                            <a class="article-tag-a clickable">Travel</a>
-                        </div>
-                        <h4 class="clickable">Hilary Kouma is nominated for Best Actress</h4>
-                    </figcaption>
-                </figure>
+            <hr>
+            <div class="flex-container">
+                <p id="address">1088, North Street, Alexandria, AU</p>
+                <p id="copyright">© 2022, All Rights Reserved</p>
             </div>
-        </div>
-    </main>
 
-    <footer>
-
-        <div class="flex-container">
-            <div class="main-page clickable">VENCE Studio.</div>
-            <div id="footer-pages" class="flex-container">
-                <div class="footer-page clickable">About Studio</div>
-                <div class="footer-page clickable">Archive</div>
-                <div class="footer-page clickable">Contact Us</div>
-            </div>
-            <div id="footer-contacts">
-                <div class="footer-contact clickable">Fb</div>
-                <div class="footer-contact clickable">Tw</div>
-                <div class="footer-contact clickable">Ln</div>
-            </div>
-        </div>
-        <hr>
-        <div class="flex-container">
-            <p id="address">1088, North Street, Alexandria, AU</p>
-            <p id="copyright">© 2022, All Rights Reserved</p>
-        </div>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

@@ -1,7 +1,12 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 
 
 *{
@@ -230,6 +235,28 @@ section p{
 }
 
 
+.left-image-anim{
+    animation: left-image-keyframes 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes left-image-keyframes {
+    from{transform:translateX(-100%)}
+    to{transform:translateX(0)}
+}
+
+.right-image-anim{
+    animation: right-image-keyframes 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes right-image-keyframes {
+    from{transform:translateX(100%)}
+    to{transform:translateX(0)}
+}
+
+
+
 #article-end{
     margin-top: 120px;
     margin-bottom: 120px;
@@ -289,6 +316,39 @@ h3{
     font-size: 25px;
     color: #495057;
 }
+
+.article-box{
+    
+}
+
+.article-box-anim{
+    -webkit-mask-image: linear-gradient(#fff, #fff, #0000, #0000);
+    mask-image: linear-gradient(#fff, #fff, #0000, #0000);
+    -webkit-mask-size: 100% 300%;
+    mask-size: 100% 300%;
+
+    transform: translateY(150%);
+
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+
+    animation: article-box-keyframes 1.5s forwards;
+}
+
+@keyframes article-box-keyframes {
+    from{
+        -webkit-mask-position: bottom;
+        mask-position: bottom;
+        transform: translateY(150%);
+    }
+
+    to{
+        -webkit-mask-position: top;
+        mask-position: top;
+        transform: translateY(0);
+    }
+}
+
 
 .article-box img{
     width: calc(90vw / 6 - 40px);
